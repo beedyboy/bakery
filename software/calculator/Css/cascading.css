@@ -1,0 +1,42 @@
+.back{
+    background-color: coral;
+}
+
+input[type=button]
+    {
+        padding: 0px;
+        border-bottom:4px solid saddlebrown; 
+        height: 50px;
+        width: 80px;
+        
+    }
+input[type=reset]
+{
+    padding: 0px;
+        border-bottom:4px solid saddlebrown; 
+        height: 50px;
+        width: 80px;
+}
+input[type=text]
+    {
+       
+        text-align: right;
+        height: 50px;
+        width: 240px;
+    }
+.control
+    {
+        
+        margin:0px auto;
+        height: 350px;
+        width: 367px;
+        background-color:thistle;
+        border-radius:12px;
+        border-bottom:4px solid saddlebrown; 
+    }
+#xoxo{
+    float: left;
+    margin-top:20px;
+    margin-left:20px;
+   
+}

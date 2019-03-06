@@ -1,0 +1,87 @@
+td a{
+color:darkblue;
+}
+
+td a:hover{
+color:red;
+
+}
+
+
+@font-face
+{
+font-family: myFirstFont;
+src: url(MTCORSVA.woff);
+}
+#header{
+	font-family:myFirstFont;
+	font-weight: bold;
+	font-size: 25px;
+}
+#loginform {
+	margin: 150px auto;
+	width: 280px;
+}
+#loginform span {
+	width: 100px;
+	display: inline-block;
+}
+#ac span {
+	width: 95px;
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: 12px;
+	padding-right: 10px;
+}
+select {
+	border: 1px solid #999;
+	background: #EEEEEE;
+	padding: 5px 10px;
+	box-shadow:0 1px 2px #ddd;
+    -moz-box-shadow:0 1px 2px #ddd;
+    -webkit-box-shadow:0 1px 2px #ddd;
+}
+
+.selectGreen{
+color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  *background-color: #51a351;
+}
+.selectRed{
+	color: #ffffff;
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+.qwe{
+width:246px;
+margin:auto;
+}
+
+input {
+	border: 1px solid #999;
+	background: #EEEEEE;
+	padding: 10px;
+	box-shadow:0 1px 2px #ddd;
+    -moz-box-shadow:0 1px 2px #ddd;
+    -webkit-box-shadow:0 1px 2px #ddd;
+}
+#btn {
+	width:100px;
+	background: green;
+	border: 1px solid #999;
+	border-radius:10px;
+	cursor: pointer;
+	font-size: 13px;
+    font-weight: bold;
+}
+#maintable {
+	margin: 50px auto;
+	width: 900px;
+}
+
+button a, a:hover{
+color:#fff;
+text-decoration:none;
+}
+

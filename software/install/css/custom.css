@@ -1,0 +1,254 @@
+@font-face{ 
+	font-family: 'opensans_light_macroman';
+	src: url('../fonts/opensans_light_macroman/OpenSans-Light-webfont.eot');
+	src: url('../fonts/opensans_light_macroman/OpenSans-Light-webfont.eot?iefix') format('eot'),
+	     url('../fonts/opensans_light_macroman/OpenSans-Light-webfont.woff') format('woff'),
+	     url('../fonts/opensans_light_macroman/OpenSans-Light-webfont.ttf') format('truetype'),
+	     url('../fonts/opensans_light_macroman/OpenSans-Light-webfont.svg#webfont') format('svg');
+}
+@font-face{ 
+	font-family: 'opensans_semibold_macroman';
+	src: url('../fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.eot');
+	src: url('../fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.eot?iefix') format('eot'),
+	     url('../fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.woff') format('woff'),
+	     url('../fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.ttf') format('truetype'),
+	     url('../fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.svg#webfont') format('svg');
+}
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue-webfont/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+p,a,h1,h2,h3,h4,h5,h6{
+	font-family:'opensans_light_macroman';
+}
+body.login{
+	background: #fff;
+}
+.login-body{
+	background: #fff;
+	padding: 0px;
+}
+.login-inner{
+	/* padding: 50px 35px 50px; */
+	background: #000000;
+}
+.login-inner h2{
+	border-bottom:1px solid #000000;
+	color:#000;
+	font-size:16px;
+	text-align:center;
+	color: #fff;
+	background-color: #0BA30B;
+	padding: 20px 15px;
+	line-height:25px;
+	margin:0;
+	font-family:'opensans_semibold_macroman';
+}
+.form-control {
+	width: 100%;
+	font-size: 14px;
+	border: 1px solid #eee;
+	border-radius: 0;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid #cccccc;
+}
+.form-control:focus{
+	border-color: #34495e;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset;
+}
+#login-form{
+	padding: 20px 15px;
+}
+.btn-default,.btn-error,.btn-primary,.btn-success,.btn-info,.btn-warning,.btn-danger{
+	color: #fff;
+	padding:5px 10px;
+	border-radius:0;
+}
+#login-form .btn-default {
+	background-color: #0BA30B;
+	border:1px solid #16a085;
+	border-radius:10px;
+	color: #fff;
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 16px;
+}
+#login-form .btn-default:hover,#login-form .btn-default:focus,#login-form .btn-default:active{
+	background-color: #18B4F2;
+	color:#fff;
+}
+.login-body .login-bottom{
+	background: #5090c1;
+	border-top: 2px solid #597597;
+	padding:15px 20px;
+	text-align:center;
+}
+.login-body .login-bottom p{
+	color:#fff;
+}
+.login-header {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.login-header h1{
+	font-family:'opensans_semibold_macroman';
+}
+.login-header .login-title{
+	font-size:26px;
+	color:#fff;
+	text-align:center;
+}
+ 
+#contextArea{
+	margin-top:130px;
+	padding-left: 0px;
+}
+#formAttendance{
+	margin-top:30px;
+}
+#formAttendance .form-control{
+	padding: 20px;
+	border: 5px solid rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+.clock {
+	color: #fff;
+	padding: 0px 0;
+}
+
+#Date { 
+	font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; 
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+}
+
+.clock ul { 
+	margin:0; 
+	padding:0px; 
+	list-style:none; 
+	text-align:center; 
+}
+.clock ul li { 
+	display:inline; 
+	font-size:2em; 
+	text-align:center; 
+	font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; 
+	border:none !important;
+}
+#point { 
+	position:relative; 
+	-moz-animation:mymove 1s ease infinite; 
+	-webkit-animation:mymove 1s ease infinite; 
+	padding-left:10px; 
+	padding-right:10px; 
+	color:#fff;
+}
+
+@-webkit-keyframes mymove 
+{
+	0% {opacity:1.0;}
+	50% {opacity:0; text-shadow:none; }
+	100% {opacity:1.0; }	
+}
+
+
+@-moz-keyframes mymove 
+{
+	0% { opacity:1.0; }
+	50% {opacity:0; text-shadow:none; }
+	100% {opacity:1.0; }	
+}
+.thumbnail, .img-thumbnail {
+	border: none;
+}
+a.thumbnail:hover, a.thumbnail:focus {
+	border-color: transparent;
+}
+.mainTitle{
+	text-align:center;
+}
+.contentArea{
+	padding:10px 0 0;
+}
+#statuses{
+	margin:10px 0 0;
+	padding:0;
+}
+div.time-picker {
+  position: absolute;
+  height: 191px;
+  width:4em; /* needed for IE */
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #aaa;
+  z-index: 99;
+  margin: 0;
+}
+div.time-picker-12hours {
+  width:6em; /* needed for IE */
+}
+
+div.time-picker ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+div.time-picker li {
+  cursor: pointer;
+  height: 10px;
+  font: 12px/1 Helvetica, Arial, sans-serif;
+  padding: 4px 3px;
+}
+div.time-picker li.selected {
+  background: #0063CE;
+  color: #fff;
+}
+#resultAreaDisplay h4, #resultAreaDisplay h5{
+	text-align:center;
+}
+#resultAreaDisplay .img-thumbnail{
+	border: 1px solid #ddd;
+} 
+.profile-area .userinfo{
+	text-align:center;
+	font-size: 20px;
+	color: #ccd1d7;
+	text-transform:capitalize;
+}
+span.lastname{
+	color:#fff;
+	font-family:opensans_semibold_macroman;
+}
+#teachersListWrap{
+	margin-top:20px;
+}
+#teachersListWrap .thumbnail{
+	border: 1px solid #000;
+	border-radius:0;
+}
+#teachersListWrap .thumbnail h4{
+	font-family:opensans_semibold_macroman;
+}
+#teachersListWrap .thumbnail .caption .list-group{
+	margin-bottom:0;
+} 
+.submitForm, #addSubjectTeacher, #addSubjectTeacherStudent{
+	padding: 15px;
+	background: #fff;
+}
+
+.border-left{
+	border-left:1px solid #000000;
+	text-align:center;
+	
+}
