@@ -8,7 +8,7 @@
 			for($i=0; $row = $result->fetch(); $i++){
 				$total=$row['total'];
 				$availableqty=$row['qty_left'];
-	  $checks=System::getColById('products', 'product_id', $row['product_id'], 7);
+	  $checks=System::getColById('products', 'product_id', $row['product_id'], 5);
  
 			?>
 		<tr  class="del<?php echo $row['product_id']; if($availableqty < 10 ): ?> "alert alert-warning record" style="color: #fff; background:rgb(255, 95, 66);" <?php endif; ?>">

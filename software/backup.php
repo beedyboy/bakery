@@ -4,7 +4,7 @@ $db = new DBBackup(array(
 	'driver' => 'mysql',
 	'host' => '127.0.0.1',
 	'user' => 'root',
-	'password' => 'beedy',
+	'password' => '',
 	'database' => 'bakery'
 ));
 $backup = $db->backup();
