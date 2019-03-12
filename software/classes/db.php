@@ -5,7 +5,7 @@ class Database
 public $db; 
 private static $dsn = 'mysql:host=localhost:3306;dbname=bakery'; 
 private static $user= 'root'; 
-private static $pass= ''; 
+private static $pass= 'beedy'; 
 public static $instance; 
 public function __construct() 
 { 

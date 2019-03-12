@@ -68,7 +68,7 @@ $query =  "SELECT * FROM sales_order WHERE  invoice = '".$invoice."'  ";
  
  </div>
  <!-- order info -->
-  <div style="widtd: 500px; float: left; height: 170px;">
+  <div style="widtd: 500px; float: left; height: 130px;">
 	
 	<table border="0" cellpadding="4" cellspacing="0" style="font-family: arial; font-size: 11px;text-align:left;widtd : 100%;">
 		<tr>
@@ -76,10 +76,7 @@ $query =  "SELECT * FROM sales_order WHERE  invoice = '".$invoice."'  ";
 		 <span style="left: 30%"> <center><strong><u>	ORDER BILL </u> <strong>	</center></span> 
 			 </td>
 		</tr>
-		<tr>
-			<td>Order Type</td>
-			<td><?php echo System::getColById2('sales', 'invoice_number', 'transaction_id', $invoice, $id,11); ?></td>
-		</tr>  
+	   
 		<tr>
 			<td>Receipt No.</td>
 			<td><?php echo $invoice ?></td>
