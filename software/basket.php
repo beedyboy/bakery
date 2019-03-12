@@ -76,10 +76,7 @@
 		 
 			<a href="index.php"><i class="fas fa-tachometer-alt fa-fw"></i>Dashboard</a>
 		 <a href="newsales.php" class=""><i class="fas fa-shopping-cart fa-fw"></i>Sales </a> 
-			<a href="#" id="takeout" class="ord_type"><i class="fas fa-truck-moving fa-fw"></i>Take Away</a>
-			<a href="#" id="takein"  class="ord_type"><i class="fas fa-utensils fa-fw"></i>Dine In</a>
-				<a href="#" class="refreshInvoive"><i class="fas fa-recycle fa-fw"></i>New Order</a>
-			
+			 
 	 
 			<a href="#" onclick="toggleFullScreen(document.body);"><i class=" fas fa-window-restore  fa-fw"></i></a>
 			<a href="#"><i class="fas fa-calculator fa-fw"></i>Calculator</a>
