@@ -45,7 +45,7 @@
 	$sub_array[] =   $row['cashier']; 
 	$sub_array[] =   "<button class='btn btn-success viewInvoiceValue'>".$row['invoice_number']." </sup></button>";
 
-	$sub_array[] =    System::formatMoney($row['amount'], true)."<sup class=' btn-danger btn-xs'>".System::hasDrink($row['invoice_number']);
+	$sub_array[] =    System::formatMoney($row['amount'], true);
 	$sub_array[] =  System::formatMoney($row['balance'], true);
 	
  
