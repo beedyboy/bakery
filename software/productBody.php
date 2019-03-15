@@ -31,7 +31,7 @@
 			echo System::formatMoney($total, true);
 			?>
 			</td>
-			<?php if($GetSession->position=="Admin"): ?>
+			<?php if($GetSession->position=="Admin" || $GetSession->position=="Manager"): ?>
 			<td>
 			<input type="hidden" class="action<?php echo $row['product_id']; ?>"  name="action" value="deleteProduct" />
 <input type="hidden"  class="name<?php echo $row['product_id']; ?>" value="<?php echo $row['product_name']; ?>" />
