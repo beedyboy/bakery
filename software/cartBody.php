@@ -21,7 +21,7 @@ $discount =0;
 $name ='';
 for($i=1; $row= $select3->fetch();  $i++){
 
-$category  = System::getColById('products', 'product_id', $row['product_id'], 4);
+// $category  = System::getColById('products', 'product_id', $row['product_id'], 4);
  $product_id = $row['product_id'];
  if($i < $rowCount){
 $name .= System::getColById('products', 'product_id', $product_id, 1)." & ";	
@@ -80,7 +80,7 @@ $name .= System::getColById('products', 'product_id', $product_id, 1);
 $select2 = $conn->db->prepare("SELECT * FROM sales_order WHERE invoice = ?  AND plate = ?");
 $select2->execute(array($id,$rows['plate']));
 			for($i=1; $row= $select2->fetch();  $i++){
-		 $category  = System::getColById('products', 'product_id', $row['product_id'], 4);		
+		//  $category  = System::getColById('products', 'product_id', $row['product_id'], 4);		
 				?>
 			
 			
@@ -98,11 +98,7 @@ $select2->execute(array($id,$rows['plate']));
 			?>
 			</td>
 			<td>
-				<?php
-				if($category=="L" || $category=="S" || $category=="SM"):
-				
-				echo "...";
-				else: ?>
+				 
 			 <div class="quantity">
       <button class="qty-minus"  id="<?php echo $row['transaction_id'];?>" >
       <i class="fas fa-minus"></i>
@@ -110,14 +106,14 @@ $select2->execute(array($id,$rows['plate']));
       
       <input type="text" name="qty" class="cart-qty"  tid="<?php echo $row['transaction_id'];?>"  id="id<?php echo $row['transaction_id'];?>"  value="<?php echo $row['qty']; ?>">
       
-      <button class="qty-plus"  id="<?php echo $row['transaction_id'];?>"  class="cart-qty"  >
+      <button class="qty-plus cart-qty"  id="<?php echo $row['transaction_id'];?>"   >
       <i class="fas fa-plus"></i>
       </button>
     </div>
-   <?php endif; ?>
+    
     </td>
 			
-			<td><input type="number" class="sendDisc"  tid="<?php echo $row['transaction_id'];?>"  style="width:55px;" value="<?php echo $row['discount']; ?>" /></td>
+			<td><input type="text" class="sendDisc"  tid="<?php echo $row['transaction_id'];?>"  style="width:55px;" value="<?php echo $row['discount']; ?>" /></td>
 			
 			<td>
 			<?php

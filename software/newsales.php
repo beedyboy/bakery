@@ -121,7 +121,7 @@
 
  <button class="meal-button addMeal" id="<?php echo $cRow['product_id'];?>"> <?php echo $cRow['product_name']; ?>
 	<br />
-	<?php echo $cRow['price']; ?>
+	&cent; <?php echo System::formatMoney($cRow['price'], true); ?>
 	</button> 
 
 

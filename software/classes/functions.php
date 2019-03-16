@@ -1137,12 +1137,12 @@ if($GetSession->loggedin== TRUE):
  $sub = $_GET['sub'];
  
   $product_id=self::getColById('sales_order', 'transaction_id', $transaction_id, 4);
- $price =$amount = self::getColById('products', 'product_id', $product_id, 6);
+ $price =$amount = self::getColById('products', 'product_id', $product_id, 4);
 	 
 
  
  //get the category of the product
-$category  = self::getColById('products', 'product_id', $product_id, 4); 
+// $category  = self::getColById('products', 'product_id', $product_id, 4); 
   
   //get sales_order quantity for the product
 	  $quantity = self::getColById('sales_order', 'transaction_id', $transaction_id, 2);
@@ -1236,7 +1236,7 @@ return 1;
 	//otherwise the quantity is not 0 and the quantity is not more than product quantity
 	elseif($qty >= 1):
 		 //use the category to check if its continental or bar or local and fish
-	if($category=="L" || $category == "C" || $category=="D" || $category=="F"):
+	// if($category=="L" || $category == "C" || $category=="D" || $category=="F"):
   
   //check the remaining product quantity
   
@@ -1260,7 +1260,7 @@ return 5;
 	 return 1; else: return 0;	endif;
 	
 
-	endif;
+	// endif;
 }
 	 
 	   
