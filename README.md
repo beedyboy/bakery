@@ -1,2 +1,2 @@
 # pos
-# bakery
+# bakery app
